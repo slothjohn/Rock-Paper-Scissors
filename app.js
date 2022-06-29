@@ -23,6 +23,4 @@ function playRound(playerSelection, computerSelection) {
     return results[resultMatrix[playerIndex][computerIndex]];
   }
 
-
-  console.log(playRound("ha", "ha"));
- 
+  
