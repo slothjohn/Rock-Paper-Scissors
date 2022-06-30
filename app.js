@@ -6,7 +6,7 @@ function computerPlay(){
 function playRound(playerSelection, computerSelection) {
     let choiceDict = {rock: 0, paper: 1, scissors: 2};
 
-    if(choiceDict.hasOwnProperty(playerSelection) == false){
+    if(choiceDict.hasOwnProperty(playerSelection.toLowerCase()) == false){
         return "its not that hard to type rock, paper, or scissors"
     }
 
@@ -23,4 +23,12 @@ function playRound(playerSelection, computerSelection) {
     return results[resultMatrix[playerIndex][computerIndex]];
   }
 
-  
+function game(){
+    for (let i = 0; i < 5; i++) {
+        let userChoice = prompt("Choose Rock, Paper, or Scissors");
+        alert(playRound(userChoice, "scissors"));
+        console.log(playRound(userChoice, "scissors"));
+     }
+}
+
+// game()
